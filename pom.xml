@@ -7,10 +7,14 @@
     <groupId>cn.duktig</groupId>
     <artifactId>springboot-template</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>proxy-pattern</module>
+    </modules>
     <packaging>pom</packaging>
 
-    <name>Project Name</name>
-    <description>Project description</description>
+    <name>design-pattern</name>
+    <description>重学设计模式</description>
+    <url>https://github.com/duktig666/design-pattern</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,58 +52,6 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--  SpringBoot 监控客户端 -->
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-client</artifactId>
-                <version>${spring-boot-admin.version}</version>
-            </dependency>
-
-            <!-- swagger2 -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${swagger2.version}</version>
-            </dependency>
-
-            <!-- Knife4j -->
-            <dependency>
-                <groupId>com.github.xiaoymin</groupId>
-                <artifactId>knife4j-spring-boot-starter</artifactId>
-                <version>${knife4j.version}</version>
-            </dependency>
-
-            <!--监控sql日志-->
-            <dependency>
-                <groupId>org.bgee.log4jdbc-log4j2</groupId>
-                <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
-                <version>${log4jdbc.version}</version>
-            </dependency>
-
-            <!--    mybatis plus相关    -->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis.plus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-generator</artifactId>
-                <version>${mybatis.plus.version}</version>
-            </dependency>
-            <!--      mybatis plus 代码生成模板引擎      -->
-            <dependency>
-                <groupId>org.freemarker</groupId>
-                <artifactId>freemarker</artifactId>
-                <version>${freemarker.version}</version>
-            </dependency>
-            <!--      mybatis plus      end      -->
-
             <!--    hutool的java开发工具包    -->
             <dependency>
                 <groupId>cn.hutool</groupId>
@@ -119,20 +71,6 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
                 <version>${fastjson.version}</version>
-            </dependency>
-
-            <!--Mysql依赖包-->
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql.version}</version>
-            </dependency>
-
-            <!-- druid数据源驱动 -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid.version}</version>
             </dependency>
 
         </dependencies>
